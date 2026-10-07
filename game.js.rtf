@@ -1,0 +1,1277 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* =========================================================\
+   HSC ENTERTAINMENT x AFL\
+   VERSION 1\
+========================================================= */\
+\
+\
+/* =========================================================\
+   QUESTION BANK\
+========================================================= */\
+\
+const questions = [\
+\
+    \{\
+        topic: "WHS",\
+        marks: 2,\
+        question:\
+            "A technician notices an extension lead with exposed internal wiring during bump-in. What should they do?",\
+        answers: [\
+            "Continue using it carefully",\
+            "Cover the damage with tape and continue",\
+            "Remove it from service and report/tag it as unsafe",\
+            "Move it somewhere less busy"\
+        ],\
+        correct: 2,\
+        explanation:\
+            "A damaged electrical cable should be removed from service, clearly identified and reported according to workplace procedures."\
+    \},\
+\
+    \{\
+        topic: "WHS",\
+        marks: 2,\
+        question:\
+            "A venue replaces a hazardous piece of equipment with a safer alternative that performs the same task. Which Hierarchy of Control level is being used?",\
+        answers: [\
+            "PPE",\
+            "Administrative control",\
+            "Substitution",\
+            "Engineering control"\
+        ],\
+        correct: 2,\
+        explanation:\
+            "Substitution means replacing the hazard with a safer alternative."\
+    \},\
+\
+    \{\
+        topic: "WHS",\
+        marks: 2,\
+        question:\
+            "A technician places a physical cable cover over cables crossing a walkway. What type of control is this?",\
+        answers: [\
+            "Elimination",\
+            "Engineering control",\
+            "Administrative control",\
+            "PPE"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "A cable cover physically changes or isolates the hazard, making it an engineering control."\
+    \},\
+\
+    \{\
+        topic: "WHS",\
+        marks: 2,\
+        question:\
+            "Why is PPE generally considered the least effective level of the Hierarchy of Control?",\
+        answers: [\
+            "It is always uncomfortable",\
+            "It removes the hazard completely",\
+            "It relies on the worker wearing it correctly and does not remove the hazard",\
+            "It is only used outdoors"\
+        ],\
+        correct: 2,\
+        explanation:\
+            "PPE protects the worker but does not eliminate or isolate the hazard itself."\
+    \},\
+\
+    \{\
+        topic: "WHS",\
+        marks: 2,\
+        question:\
+            "Which person does a Health and Safety Representative primarily represent?",\
+        answers: [\
+            "Customers",\
+            "Workers",\
+            "Venue owners",\
+            "Performers only"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "An HSR represents workers in relation to workplace health and safety."\
+    \},\
+\
+    \{\
+        topic: "AUDIO",\
+        marks: 2,\
+        question:\
+            "A microphone produces a very weak signal at the input of an audio console. Which control should the technician investigate first?",\
+        answers: [\
+            "Pan",\
+            "Gain",\
+            "Mute",\
+            "EQ"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "Gain controls the level of the incoming signal entering the mixer channel."\
+    \},\
+\
+    \{\
+        topic: "AUDIO",\
+        marks: 2,\
+        question:\
+            "What is the main purpose of EQ on an audio mixer?",\
+        answers: [\
+            "To adjust the frequency content of a signal",\
+            "To turn a microphone on",\
+            "To physically amplify a speaker",\
+            "To change the microphone connector"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "EQ adjusts different frequency ranges, such as bass, mid and treble."\
+    \},\
+\
+    \{\
+        topic: "AUDIO",\
+        marks: 2,\
+        question:\
+            "Which signal flow is most appropriate for a basic live vocal system?",\
+        answers: [\
+            "Speaker \uc0\u8594  Mixer \u8594  Microphone \u8594  Amplifier",\
+            "Microphone \uc0\u8594  Mixer \u8594  Amplifier \u8594  Speaker",\
+            "Amplifier \uc0\u8594  Microphone \u8594  Mixer \u8594  Speaker",\
+            "Mixer \uc0\u8594  Microphone \u8594  Speaker \u8594  Amplifier"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "The microphone produces the signal, which enters the mixer, then reaches the amplifier and speaker."\
+    \},\
+\
+    \{\
+        topic: "AUDIO",\
+        marks: 2,\
+        question:\
+            "A vocalist moves closer to their foldback speaker and a loud squealing sound begins. What is most likely occurring?",\
+        answers: [\
+            "Compression",\
+            "Audio feedback",\
+            "Clipping",\
+            "Equalisation"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "Feedback occurs when amplified sound from a speaker is picked up by the microphone and repeatedly amplified."\
+    \},\
+\
+    \{\
+        topic: "AUDIO",\
+        marks: 2,\
+        question:\
+            "What is the main purpose of a foldback speaker?",\
+        answers: [\
+            "To provide sound for the audience",\
+            "To provide monitoring for performers",\
+            "To record the performance",\
+            "To control lighting"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "Foldback allows performers to hear relevant audio during a performance."\
+    \},\
+\
+    \{\
+        topic: "MICROPHONES",\
+        marks: 2,\
+        question:\
+            "Which statement best compares dynamic and condenser microphones?",\
+        answers: [\
+            "Both always require phantom power",\
+            "Dynamic microphones are generally rugged, while condensers are generally more sensitive",\
+            "Dynamic microphones are only used for recording",\
+            "Condenser microphones cannot record vocals"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "Dynamic microphones are commonly valued for durability, while condenser microphones are generally more sensitive and may require phantom power."\
+    \},\
+\
+    \{\
+        topic: "LIGHTING",\
+        marks: 2,\
+        question:\
+            "A designer needs a lantern capable of producing a clearly defined, focused beam. Which would be most appropriate?",\
+        answers: [\
+            "Fresnel",\
+            "Profile",\
+            "PAR",\
+            "Floodlight"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "A profile produces a more focused beam with defined edges and can project shapes using shutters/gobos."\
+    \},\
+\
+    \{\
+        topic: "LIGHTING",\
+        marks: 2,\
+        question:\
+            "Which lantern generally produces a softer-edged beam suitable for general stage coverage?",\
+        answers: [\
+            "Profile",\
+            "Fresnel",\
+            "Followspot",\
+            "Projector"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "A Fresnel generally produces a softer-edged beam."\
+    \},\
+\
+    \{\
+        topic: "LIGHTING",\
+        marks: 2,\
+        question:\
+            "What does DMX allow lighting equipment to do?",\
+        answers: [\
+            "Receive digital control information from a lighting control system",\
+            "Generate electricity",\
+            "Replace a safety chain",\
+            "Increase the physical size of a lantern"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "DMX is commonly used to send digital control information between lighting control equipment and fixtures."\
+    \},\
+\
+    \{\
+        topic: "LIGHTING",\
+        marks: 2,\
+        question:\
+            "A lighting designer wants a scene to appear cold and isolated. Which approach could help create this effect?",\
+        answers: [\
+            "Use cool colours and appropriate low-intensity lighting",\
+            "Use only bright warm orange light",\
+            "Turn every fixture to full intensity",\
+            "Remove all lighting"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "Cool colours such as blue, combined with suitable intensity and positioning, can contribute to a cold atmosphere."\
+    \},\
+\
+    \{\
+        topic: "LIGHTING ROLES",\
+        marks: 2,\
+        question:\
+            "Who is primarily responsible for developing the creative lighting design in consultation with the production team?",\
+        answers: [\
+            "Lighting operator",\
+            "Lighting designer",\
+            "Audio operator",\
+            "Front-of-house manager"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "The lighting designer develops the creative lighting design."\
+    \},\
+\
+    \{\
+        topic: "LIGHTING ROLES",\
+        marks: 2,\
+        question:\
+            "Who normally operates the programmed lighting cues during the performance?",\
+        answers: [\
+            "Lighting operator",\
+            "Lighting designer",\
+            "Box office staff",\
+            "Usher"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "The lighting operator operates the lighting system and executes cues during the performance."\
+    \},\
+\
+    \{\
+        topic: "RIGGING",\
+        marks: 2,\
+        question:\
+            "What is the primary purpose of a safety chain on a suspended lighting fixture?",\
+        answers: [\
+            "To change the colour of the light",\
+            "To provide secondary support if the primary attachment fails",\
+            "To increase the brightness",\
+            "To transmit audio"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "The safety chain provides secondary retention if the primary mounting method fails."\
+    \},\
+\
+    \{\
+        topic: "RIGGING",\
+        marks: 2,\
+        question:\
+            "What is the purpose of a C-clamp when rigging a lighting fixture?",\
+        answers: [\
+            "To attach the fixture to an appropriate rigging point",\
+            "To control the audio gain",\
+            "To change the DMX address",\
+            "To protect a microphone"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "A C-clamp is used to attach a lighting fixture to a suitable supporting structure."\
+    \},\
+\
+    \{\
+        topic: "STAGING",\
+        marks: 2,\
+        question:\
+            "A performer is facing the audience. Where is stage left from the performer's perspective?",\
+        answers: [\
+            "The performer's left",\
+            "The audience's left",\
+            "Behind the audience",\
+            "Centre stage only"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "Stage directions are from the performer's perspective when they are facing the audience."\
+    \},\
+\
+    \{\
+        topic: "STAGING",\
+        marks: 2,\
+        question:\
+            "Which statement correctly describes upstage?",\
+        answers: [\
+            "The area closest to the audience",\
+            "The area furthest from the audience",\
+            "The area outside the venue",\
+            "The area behind the audience"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "Upstage is further away from the audience."\
+    \},\
+\
+    \{\
+        topic: "STAGING",\
+        marks: 2,\
+        question:\
+            "What is the purpose of a bump-in?",\
+        answers: [\
+            "To pack equipment away after the event",\
+            "To install, set up and prepare equipment and production elements",\
+            "To sell tickets",\
+            "To write the production script"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "Bump-in is the process of bringing in, installing and preparing production equipment and elements."\
+    \},\
+\
+    \{\
+        topic: "VISION",\
+        marks: 2,\
+        question:\
+            "A projected image is distorted because its proportions do not match the intended display format. Which setting should be checked?",\
+        answers: [\
+            "Aspect ratio",\
+            "Gain",\
+            "DMX address",\
+            "Audio EQ"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "Aspect ratio describes the relationship between image width and height."\
+    \},\
+\
+    \{\
+        topic: "VISION",\
+        marks: 2,\
+        question:\
+            "A projector is receiving a signal but no image appears. Which is an appropriate first troubleshooting step?",\
+        answers: [\
+            "Check signal and power connections",\
+            "Replace the stage floor",\
+            "Change the microphone",\
+            "Adjust the lighting gel"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "Checking power, signal and cable connections is an appropriate first troubleshooting step."\
+    \},\
+\
+    \{\
+        topic: "VISION",\
+        marks: 2,\
+        question:\
+            "What is the main purpose of a projector in a live production?",\
+        answers: [\
+            "To capture audio",\
+            "To display visual content onto a surface",\
+            "To amplify microphones",\
+            "To control stage rigging"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "A projector displays visual content onto a screen or other suitable surface."\
+    \},\
+\
+    \{\
+        topic: "CUSTOMER SERVICE",\
+        marks: 2,\
+        question:\
+            "A customer makes a complaint about a safety issue at a venue. What should staff do first?",\
+        answers: [\
+            "Ignore the complaint",\
+            "Gather accurate details about the incident",\
+            "Immediately offer unlimited compensation",\
+            "Tell the customer to contact another venue"\
+        ],\
+        correct: 1,\
+        explanation:\
+            "Staff should listen and gather accurate information so the issue can be properly recorded and addressed."\
+    \},\
+\
+    \{\
+        topic: "INDUSTRY ROLES",\
+        marks: 2,\
+        question:\
+            "Who is primarily responsible for coordinating technical activities and communication during a production?",\
+        answers: [\
+            "Technical management personnel",\
+            "Audience members",\
+            "Box office customers",\
+            "Usher only"\
+        ],\
+        correct: 0,\
+        explanation:\
+            "Technical management coordinates technical personnel, equipment and production requirements."\
+    \}\
+\
+];\
+\
+\
+/* =========================================================\
+   GAME STATE\
+========================================================= */\
+\
+let currentQuestion = 0;\
+\
+let entertainmentCorrect = 0;\
+let entertainmentAttempted = 0;\
+\
+let aflScore = 0;\
+let aflPlays = 0;\
+let successfulPlays = 0;\
+\
+let selectedAnswer = null;\
+\
+let keys = \{\};\
+\
+let player = \{\
+    x: 50,\
+    y: 50,\
+    speed: 0.35\
+\};\
+\
+let defenders = [\
+    \{ x: 62, y: 45, speed: 0.09 \},\
+    \{ x: 68, y: 55, speed: 0.075 \},\
+    \{ x: 57, y: 65, speed: 0.06 \}\
+];\
+\
+let teammates = [\
+    \{ x: 35, y: 40 \},\
+    \{ x: 42, y: 68 \}\
+];\
+\
+let hasBall = true;\
+\
+let gameRunning = false;\
+\
+let gameTime = 90;\
+\
+let clockInterval;\
+\
+\
+/* =========================================================\
+   DOM ELEMENTS\
+========================================================= */\
+\
+const homeScreen = document.getElementById("homeScreen");\
+const questionScreen = document.getElementById("questionScreen");\
+const aflScreen = document.getElementById("aflScreen");\
+const gameOverScreen = document.getElementById("gameOverScreen");\
+\
+const startButton = document.getElementById("startButton");\
+\
+const questionText = document.getElementById("questionText");\
+const answerArea = document.getElementById("answerArea");\
+const submitAnswer = document.getElementById("submitAnswer");\
+const questionFeedback = document.getElementById("questionFeedback");\
+\
+const questionNumber = document.getElementById("questionNumber");\
+const questionTopic = document.getElementById("questionTopic");\
+const questionMarks = document.getElementById("questionMarks");\
+const questionScore = document.getElementById("questionScore");\
+\
+const playerElement = document.getElementById("player");\
+const ballElement = document.getElementById("ball");\
+\
+const defenderElements = [\
+    document.getElementById("defender1"),\
+    document.getElementById("defender2"),\
+    document.getElementById("defender3")\
+];\
+\
+const teammateElements = [\
+    document.getElementById("teammate1"),\
+    document.getElementById("teammate2")\
+];\
+\
+const actionMessage = document.getElementById("actionMessage");\
+\
+const playResult = document.getElementById("playResult");\
+const playResultTitle = document.getElementById("playResultTitle");\
+const playResultText = document.getElementById("playResultText");\
+const continueButton = document.getElementById("continueButton");\
+\
+const gameClock = document.getElementById("gameClock");\
+const aflScoreElement = document.getElementById("aflScore");\
+\
+const entertainmentScoreElement =\
+    document.getElementById("entertainmentScore");\
+\
+const playsScoreElement =\
+    document.getElementById("playsScore");\
+\
+const successfulPlaysElement =\
+    document.getElementById("successfulPlays");\
+\
+const finalScoreElement =\
+    document.getElementById("finalScore");\
+\
+const restartButton =\
+    document.getElementById("restartButton");\
+\
+\
+/* =========================================================\
+   START GAME\
+========================================================= */\
+\
+startButton.addEventListener("click", () => \{\
+\
+    homeScreen.classList.add("hidden");\
+\
+    questionScreen.classList.remove("hidden");\
+\
+    loadQuestion();\
+\
+\});\
+\
+\
+/* =========================================================\
+   LOAD QUESTION\
+========================================================= */\
+\
+function loadQuestion() \{\
+\
+    selectedAnswer = null;\
+\
+    questionFeedback.className = "feedback hidden";\
+\
+    submitAnswer.disabled = false;\
+\
+    const q = questions[currentQuestion];\
+\
+    questionNumber.textContent =\
+        `Question $\{currentQuestion + 1\} / $\{questions.length\}`;\
+\
+    questionTopic.textContent = q.topic;\
+\
+    questionMarks.textContent =\
+        `$\{q.marks\} marks`;\
+\
+    questionText.textContent =\
+        q.question;\
+\
+    questionScore.textContent =\
+        `Correct: $\{entertainmentCorrect\}`;\
+\
+    answerArea.innerHTML = "";\
+\
+    q.answers.forEach((answer, index) => \{\
+\
+        const button = document.createElement("button");\
+\
+        button.className = "answer-option";\
+\
+        button.textContent =\
+            `$\{String.fromCharCode(65 + index)\}. $\{answer\}`;\
+\
+        button.addEventListener("click", () => \{\
+\
+            document\
+                .querySelectorAll(".answer-option")\
+                .forEach(option => option.classList.remove("selected"));\
+\
+            button.classList.add("selected");\
+\
+            selectedAnswer = index;\
+\
+        \});\
+\
+        answerArea.appendChild(button);\
+\
+    \});\
+\
+\}\
+\
+\
+/* =========================================================\
+   SUBMIT ANSWER\
+========================================================= */\
+\
+submitAnswer.addEventListener("click", () => \{\
+\
+    if (selectedAnswer === null) \{\
+        showMessage("Choose an answer first.");\
+        return;\
+    \}\
+\
+    const q = questions[currentQuestion];\
+\
+    entertainmentAttempted++;\
+\
+    const options =\
+        document.querySelectorAll(".answer-option");\
+\
+    options.forEach((option, index) => \{\
+\
+        if (index === q.correct) \{\
+            option.classList.add("correct");\
+        \}\
+\
+        if (\
+            index === selectedAnswer &&\
+            selectedAnswer !== q.correct\
+        ) \{\
+            option.classList.add("incorrect");\
+        \}\
+\
+    \});\
+\
+    submitAnswer.disabled = true;\
+\
+    if (selectedAnswer === q.correct) \{\
+\
+        entertainmentCorrect++;\
+\
+        questionFeedback.className =\
+            "feedback correct-feedback";\
+\
+        questionFeedback.textContent =\
+            `CORRECT! $\{q.explanation\} You earned AFL possession.`;\
+\
+        questionFeedback.classList.remove("hidden");\
+\
+        setTimeout(() => \{\
+            startAFL();\
+        \}, 1300);\
+\
+    \} else \{\
+\
+        questionFeedback.className =\
+            "feedback wrong-feedback";\
+\
+        questionFeedback.textContent =\
+            `Not quite. $\{q.explanation\} You don't earn possession this time.`;\
+\
+        questionFeedback.classList.remove("hidden");\
+\
+        setTimeout(() => \{\
+            nextQuestion();\
+        \}, 1800);\
+\
+    \}\
+\
+\});\
+\
+\
+/* =========================================================\
+   NEXT QUESTION\
+========================================================= */\
+\
+function nextQuestion() \{\
+\
+    currentQuestion++;\
+\
+    if (currentQuestion >= questions.length) \{\
+        endGame();\
+        return;\
+    \}\
+\
+    loadQuestion();\
+\
+\}\
+\
+\
+/* =========================================================\
+   AFL START\
+========================================================= */\
+\
+function startAFL() \{\
+\
+    questionScreen.classList.add("hidden");\
+\
+    aflScreen.classList.remove("hidden");\
+\
+    playResult.classList.add("hidden");\
+\
+    player.x = 35;\
+    player.y = 50;\
+\
+    defenders = [\
+        \{ x: 60, y: 44, speed: 0.09 \},\
+        \{ x: 70, y: 55, speed: 0.075 \},\
+        \{ x: 57, y: 65, speed: 0.06 \}\
+    ];\
+\
+    hasBall = true;\
+\
+    gameRunning = true;\
+\
+    gameTime = 25;\
+\
+    updateAFL();\
+\
+    startClock();\
+\
+\}\
+\
+\
+/* =========================================================\
+   KEYBOARD INPUT\
+========================================================= */\
+\
+document.addEventListener("keydown", event => \{\
+\
+    keys[event.key.toLowerCase()] = true;\
+\
+    if (!gameRunning) return;\
+\
+    if (event.key.toLowerCase() === "k") \{\
+        kickBall(false);\
+    \}\
+\
+    if (event.key.toLowerCase() === "h") \{\
+        handball();\
+    \}\
+\
+    if (event.key.toLowerCase() === "j") \{\
+        kickBall(true);\
+    \}\
+\
+    if (event.code === "Space") \{\
+\
+        event.preventDefault();\
+\
+        evade();\
+\
+    \}\
+\
+\});\
+\
+\
+document.addEventListener("keyup", event => \{\
+\
+    keys[event.key.toLowerCase()] = false;\
+\
+\});\
+\
+\
+/* =========================================================\
+   PLAYER MOVEMENT\
+========================================================= */\
+\
+function updatePlayer() \{\
+\
+    if (!gameRunning || !hasBall) return;\
+\
+    let speed = player.speed;\
+\
+    if (keys["shift"]) \{\
+        speed *= 1.8;\
+    \}\
+\
+    if (keys["w"]) \{\
+        player.y -= speed;\
+    \}\
+\
+    if (keys["s"]) \{\
+        player.y += speed;\
+    \}\
+\
+    if (keys["a"]) \{\
+        player.x -= speed;\
+    \}\
+\
+    if (keys["d"]) \{\
+        player.x += speed;\
+    \}\
+\
+    player.x = Math.max(8, Math.min(92, player.x));\
+\
+    player.y = Math.max(8, Math.min(92, player.y));\
+\
+\}\
+\
+\
+/* =========================================================\
+   DEFENDER AI\
+========================================================= */\
+\
+function updateDefenders() \{\
+\
+    if (!gameRunning) return;\
+\
+    defenders.forEach(defender => \{\
+\
+        const dx = player.x - defender.x;\
+        const dy = player.y - defender.y;\
+\
+        const distance =\
+            Math.sqrt(dx * dx + dy * dy);\
+\
+        if (distance > 4) \{\
+\
+            defender.x +=\
+                (dx / distance) *\
+                defender.speed;\
+\
+            defender.y +=\
+                (dy / distance) *\
+                defender.speed;\
+\
+        \}\
+\
+    \});\
+\
+\}\
+\
+\
+/* =========================================================\
+   TEAMMATES\
+========================================================= */\
+\
+function updateTeammates() \{\
+\
+    teammates[0].x =\
+        38 + Math.sin(Date.now() / 1500) * 4;\
+\
+    teammates[0].y =\
+        38 + Math.cos(Date.now() / 1200) * 5;\
+\
+    teammates[1].x =\
+        42 + Math.cos(Date.now() / 1700) * 5;\
+\
+    teammates[1].y =\
+        68 + Math.sin(Date.now() / 1300) * 4;\
+\
+\}\
+\
+\
+/* =========================================================\
+   DRAW GAME\
+========================================================= */\
+\
+function updateAFL() \{\
+\
+    if (!gameRunning) return;\
+\
+    updatePlayer();\
+\
+    updateDefenders();\
+\
+    updateTeammates();\
+\
+    render();\
+\
+    requestAnimationFrame(updateAFL);\
+\
+\}\
+\
+\
+/* =========================================================\
+   RENDER\
+========================================================= */\
+\
+function render() \{\
+\
+    playerElement.style.left =\
+        `$\{player.x\}%`;\
+\
+    playerElement.style.top =\
+        `$\{player.y\}%`;\
+\
+    ballElement.style.left =\
+        `$\{player.x + 1\}%`;\
+\
+    ballElement.style.top =\
+        `$\{player.y + 1\}%`;\
+\
+    defenders.forEach((defender, index) => \{\
+\
+        defenderElements[index].style.left =\
+            `$\{defender.x\}%`;\
+\
+        defenderElements[index].style.top =\
+            `$\{defender.y\}%`;\
+\
+    \});\
+\
+    teammates.forEach((teammate, index) => \{\
+\
+        teammateElements[index].style.left =\
+            `$\{teammate.x\}%`;\
+\
+        teammateElements[index].style.top =\
+            `$\{teammate.y\}%`;\
+\
+    \});\
+\
+\}\
+\
+\
+/* =========================================================\
+   CLOCK\
+========================================================= */\
+\
+function startClock() \{\
+\
+    clearInterval(clockInterval);\
+\
+    clockInterval = setInterval(() => \{\
+\
+        if (!gameRunning) return;\
+\
+        gameTime--;\
+\
+        const seconds =\
+            Math.max(0, gameTime);\
+\
+        gameClock.textContent =\
+            `00:$\{String(seconds).padStart(2, "0")\}`;\
+\
+        if (gameTime <= 0) \{\
+\
+            finishPlay(\
+                false,\
+                "The siren sounds. You ran out of time."\
+            );\
+\
+        \}\
+\
+    \}, 1000);\
+\
+\}\
+\
+\
+/* =========================================================\
+   DISTANCE\
+========================================================= */\
+\
+function distanceBetween(a, b) \{\
+\
+    const dx = a.x - b.x;\
+    const dy = a.y - b.y;\
+\
+    return Math.sqrt(dx * dx + dy * dy);\
+\
+\}\
+\
+\
+/* =========================================================\
+   KICK\
+========================================================= */\
+\
+function kickBall(leadKick) \{\
+\
+    if (!gameRunning || !hasBall) return;\
+\
+    hasBall = false;\
+\
+    aflPlays++;\
+\
+    const nearestDefender =\
+        Math.min(\
+            ...defenders.map(d =>\
+                distanceBetween(player, d)\
+            )\
+        );\
+\
+    let success;\
+\
+    if (leadKick) \{\
+\
+        success =\
+            nearestDefender > 9 &&\
+            Math.random() > 0.2;\
+\
+    \} else \{\
+\
+        success =\
+            nearestDefender > 5 &&\
+            Math.random() > 0.3;\
+\
+    \}\
+\
+    if (success) \{\
+\
+        successfulPlays++;\
+\
+        if (player.x > 82) \{\
+\
+            aflScore += 6;\
+\
+            finishPlay(\
+                true,\
+                "GOAL! You found space inside the forward line and converted."\
+            );\
+\
+        \} else \{\
+\
+            player.x =\
+                Math.min(90, player.x + 12);\
+\
+            finishPlay(\
+                true,\
+                leadKick\
+                    ? "Lead kick successful! Your teammate gets into space."\
+                    : "Good kick! Your team gains territory."\
+            );\
+\
+        \}\
+\
+    \} else \{\
+\
+        finishPlay(\
+            false,\
+            "The kick is intercepted or misses the target."\
+        );\
+\
+    \}\
+\
+\}\
+\
+\
+/* =========================================================\
+   HANDBALL\
+========================================================= */\
+\
+function handball() \{\
+\
+    if (!gameRunning || !hasBall) return;\
+\
+    const nearestTeammate =\
+        Math.min(\
+            ...teammates.map(t =>\
+                distanceBetween(player, t)\
+            )\
+        );\
+\
+    aflPlays++;\
+\
+    if (nearestTeammate < 20) \{\
+\
+        successfulPlays++;\
+\
+        hasBall = true;\
+\
+        player.x += 5;\
+\
+        finishPlay(\
+            true,\
+            "Handball successful! Your teammate receives it and returns possession."\
+        );\
+\
+    \} else \{\
+\
+        finishPlay(\
+            false,\
+            "No teammate was close enough for a safe handball."\
+        );\
+\
+    \}\
+\
+\}\
+\
+\
+/* =========================================================\
+   EVADE\
+========================================================= */\
+\
+function evade() \{\
+\
+    if (!gameRunning || !hasBall) return;\
+\
+    const nearestDefender =\
+        Math.min(\
+            ...defenders.map(d =>\
+                distanceBetween(player, d)\
+            )\
+        );\
+\
+    if (nearestDefender < 15) \{\
+\
+        const direction =\
+            Math.random() > 0.5 ? 1 : -1;\
+\
+        player.y +=\
+            direction * 12;\
+\
+        player.x += 6;\
+\
+        successfulPlays++;\
+\
+        showMessage("EVASION!");\
+\
+    \} else \{\
+\
+        player.x += 5;\
+\
+        showMessage("BURST!");\
+\
+    \}\
+\
+\}\
+\
+\
+/* =========================================================\
+   FINISH PLAY\
+========================================================= */\
+\
+function finishPlay(success, message) \{\
+\
+    gameRunning = false;\
+\
+    clearInterval(clockInterval);\
+\
+    if (success) \{\
+\
+        playResultTitle.textContent =\
+            "PLAY SUCCESSFUL!";\
+\
+    \} else \{\
+\
+        playResultTitle.textContent =\
+            "PLAY ENDED";\
+\
+    \}\
+\
+    playResultText.textContent =\
+        message;\
+\
+    aflScoreElement.textContent =\
+        aflScore;\
+\
+    playResult.classList.remove("hidden");\
+\
+\}\
+\
+\
+/* =========================================================\
+   CONTINUE\
+========================================================= */\
+\
+continueButton.addEventListener("click", () => \{\
+\
+    playResult.classList.add("hidden");\
+\
+    nextQuestion();\
+\
+\});\
+\
+\
+/* =========================================================\
+   MESSAGE\
+========================================================= */\
+\
+function showMessage(message) \{\
+\
+    actionMessage.textContent =\
+        message;\
+\
+    actionMessage.classList.remove("show");\
+\
+    void actionMessage.offsetWidth;\
+\
+    actionMessage.classList.add("show");\
+\
+\}\
+\
+\
+/* =========================================================\
+   END GAME\
+========================================================= */\
+\
+function endGame() \{\
+\
+    clearInterval(clockInterval);\
+\
+    gameRunning = false;\
+\
+    aflScreen.classList.add("hidden");\
+\
+    questionScreen.classList.add("hidden");\
+\
+    gameOverScreen.classList.remove("hidden");\
+\
+    const percentage =\
+        entertainmentAttempted === 0\
+            ? 0\
+            : Math.round(\
+                (entertainmentCorrect /\
+                entertainmentAttempted) * 100\
+            );\
+\
+    entertainmentScoreElement.textContent =\
+        `$\{percentage\}%`;\
+\
+    playsScoreElement.textContent =\
+        aflPlays;\
+\
+    successfulPlaysElement.textContent =\
+        successfulPlays;\
+\
+    finalScoreElement.textContent =\
+        aflScore;\
+\
+\}\
+\
+\
+/* =========================================================\
+   RESTART\
+========================================================= */\
+\
+restartButton.addEventListener("click", () => \{\
+\
+    currentQuestion = 0;\
+\
+    entertainmentCorrect = 0;\
+    entertainmentAttempted = 0;\
+\
+    aflScore = 0;\
+    aflPlays = 0;\
+    successfulPlays = 0;\
+\
+    gameTime = 25;\
+\
+    gameOverScreen.classList.add("hidden");\
+\
+    questionScreen.classList.remove("hidden");\
+\
+    loadQuestion();\
+\
+\});}
